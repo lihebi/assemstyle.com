@@ -12,7 +12,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  // padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -71,7 +71,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    // max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -89,4 +89,39 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+// rewrite bootstrap default
+.navbar {
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+  z-index: 9;
+  font-size: 16px;
+}
+
+
+
+// main page scrolling
+
+body {
+  color: #333;
+  color: rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 8em;
+}
+
+
+
+.intro p {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 3em;
+}
+
+.section {
+  text-align: center;
 }
