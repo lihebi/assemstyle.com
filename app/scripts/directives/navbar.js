@@ -12,6 +12,7 @@ angular.module('assemstylecomApp')
     return {
       templateUrl: 'views/navbar.html',
       restrict: 'E',
+      replace: true
       // link: function postLink(scope, element, attrs) {
       //   element.text('this is the navbar directive');
       // }

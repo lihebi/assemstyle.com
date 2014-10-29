@@ -82,68 +82,80 @@ body {
 
 /*ASSEMSTYLE Inc*/
 
+/*sketch the UI*/
+
 body {
   padding-top: 0;
-  /*color: #000;*/
-  color: rgba(255,255,255,1);
+  padding-bottom: 0;
 }
 
 .navbar {
   border-radius: 0;
   border: 0;
   margin-bottom: 0;
-  z-index: 9;
-  font-size: 16px;
+  /*z-index: 9;*/
+  /*font-size: 16px;*/
   position: fixed;
   width: 100%;
 }
 
-/*fullpage style*/
-
-/*.fp-next .fp-prev {
-  border-color: transparent transparent transparent rgba(255, 255, 255, 0.55);
-}*/
-
-.section {
+.footer {
   text-align: center;
+  background-color: black;
+  min-height: 50px;
 }
 
-.intro {
-  max-width: 80%;
-  margin: 0 auto;
+
+/*custom navbar*/
+
+.navbar-inverse {
+	background-color:#000000;
+    color:#fff;
+}
+
+.navbar-inverse li>a:hover,.navbar-inverse li>a:focus,.navbar-inverse li.active {
+	background-color:#ce7500 !important;
+}
+
+.navbar-inverse a{
+    color:#fefefe !important;
+}
+
+/*other*/
+
+
+
+img{
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.section {
+  min-height: 1000px;
+  text-align: center;
+  display: table;
+  width: 100%;
+  /*position: relative;*/
 }
 
 @media screen and (min-width: 768px) {
   .section h1 {
     font-size: 7em;
   }
-
   .section p {
     font-size: 3em;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .section p {
-    font-size: 3em;
-  }
+.intro {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 80px;
 }
 
-
-/*custom navbar*/
-
-.navbar-trans {
-	background-color:#000000;
-    color:#fff;
-}
-
-.navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
-	background-color:#ce7500;
-}
-
-.navbar-trans a{
-    color:#fefefe;
-}
+/*specific*/
 
 #introduction {
   background-image: url(../images/b.jpg);
@@ -151,9 +163,28 @@ body {
   color: #ec3645;
 }
 
-img{
-  -webkit-transition: all 0.7s ease-out;
-  -moz-transition: all 0.7s ease-out;
-  -o-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
+#assemble {
+  background-color: #109a6e;
+  color: white;
+}
+
+#designer {
+  background-color: #9f0b0b;
+  color: white;
+}
+
+#threed {
+  background-color: #af300a;
+  color: white;
+}
+
+#idea {
+  background-color: #525252;
+  color: white;
+}
+
+/*phone*/
+
+.section {
+  min-height: 800px;
 }
